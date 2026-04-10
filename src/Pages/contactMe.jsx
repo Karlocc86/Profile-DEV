@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import {Link} from "react-router";
 
+     
 const Contactme = () => {
   const [form, setForm] = useState({
     name: '',
@@ -35,7 +37,7 @@ const Contactme = () => {
 
   return (
     <div>
-      Contactme
+      Contact me
       <div>
         <div style={{ display: 'flex', gap: '20px' }}>
           <input
@@ -63,7 +65,11 @@ const Contactme = () => {
         </div>
         <button style={{ width: '140px', height: '40px' }}>Contact Me</button>
       </div>
-      <button>Go Back</button>
+      
+          <Link to={'/'}>
+          <button>Go Back</button>
+          </Link>
+          
     </div>
   );
 };
